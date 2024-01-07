@@ -1,21 +1,19 @@
 * {
-    margin:0;
+    margin: 0;
     font-family: Arial;
-    border: border-box;
-}
-
-* {
+    box-sizing: border-box; /* Corrected 'border: border-box;' to 'box-sizing: border-box;' */
     scroll-behavior: smooth;
 }
 
 .navbar {
-    height: 60px;
+    height: 60px;/*change for responsive 60 px*/
     background-color: #0f1111;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -118,7 +116,7 @@ span {
 
 /** panel **/
 .panel {
-    height: 40px;
+    height: 40px;/* change for responsive 40 px*/
     background-color: #222f3d;
     display: flex;
     color: white;
@@ -231,7 +229,7 @@ span {
 .foot-panel2 {
     background-color: #222f3d;
     color: white;
-    height: 300px;
+    height: 300px;/* change for responsive 300px*/
     display: flex;
     justify-content: space-evenly;
 }
@@ -285,4 +283,100 @@ ul a:hover {
 
 .copyright {
     padding-top: 5px;
+}
+
+
+
+
+/***media query**/
+
+/* Your original CSS styles go here */
+
+/* Responsive Styles */
+
+/* Tablet devices (1024px and below) */
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        justify-content: space-around;
+        padding: 10px 0;
+        height: fit-content;
+    }
+
+    .nav-logo, .logo {
+        height: 40px;
+        width: 80px;
+    }
+
+    .nav-search {
+        width: 80%;
+    }
+
+    .shop-section .box {
+        width: 47%; /* Adjust for tablet view */
+    }
+/* change for responsive */
+    .panel {
+        justify-content: space-around;
+        padding: 10px 0;
+        height: fit-content;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .foot-panel2 ul {
+        margin: 10px 0;
+    }
+}
+
+/* Mobile devices (768px and below) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        /* flex-direction: column;
+        /* height: auto; */
+        /* height: fit-content; */ 
+        justify-content: space-around;
+        padding: 10px 0;
+        height: fit-content;
+    }
+
+    .nav-search, .search-input {
+        width: 90%; /* Full width for mobile devices */
+    }
+
+    .nav-search, .search-select, .search-icon {
+        height: 35px; /* Adjust height for better usability */
+    }
+
+    /* change for responsive */
+    .panel {
+        justify-content: space-around;
+        padding: 10px 0;
+        height: fit-content;
+    }
+
+    .hero-section {
+        height: 150px; /* Smaller hero section for mobile */
+    }
+
+    .hero-msg {
+        width: 90%; /* Full width in mobile view */
+    }
+
+    .shop-section .box {
+        width: 95%; /* Full width for mobile view */
+    }
+
+    .footer, .foot-panel1, .foot-panel2, .foot-panel3 {
+        text-align: center;
+        
+    }
+
+    .foot-panel2 {
+        padding: 20px 0;
+        height: fit-content; /* Additional padding for mobile */
+    }
 }
