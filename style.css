@@ -126,7 +126,7 @@ span {
 }
 /*changes*/
 .panel-all {
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .panel-ops p {
@@ -173,6 +173,7 @@ span {
 .hero-msg a {
     color: #007185;
     text-decoration: none;
+    margin-left: 10px;
 }
 
 
@@ -190,6 +191,7 @@ span {
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .box p:hover{
