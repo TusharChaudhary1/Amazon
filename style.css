@@ -122,6 +122,11 @@ span {
     color: white;
     justify-content: space-evenly;
     align-items: center;
+    
+}
+/*changes*/
+.panel-all {
+    margin-left: 10px;
 }
 
 .panel-ops p {
@@ -137,6 +142,7 @@ span {
 .panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
+    margin-left: 15px;
 }
 
 
@@ -152,19 +158,21 @@ span {
 }
 
 .hero-msg {
-    background-color: white;
-    color: black;
-    height: 40px;
+    background-color:  #222f3d;
+    color: white;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 0.85rem;
-    width: 95%;
-    margin-bottom: 25px;
+    width: 100%;
+    padding-left: 10px;
+    /* margin-bottom: 25px; */
 }
 
 .hero-msg a {
     color: #007185;
+    text-decoration: none;
 }
 
 
@@ -363,7 +371,7 @@ ul a:hover {
     }
 
     .hero-msg {
-        width: 90%; /* Full width in mobile view */
+        width: 100%; /* Full width in mobile view */
     }
 
     .shop-section .box {
