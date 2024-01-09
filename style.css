@@ -189,6 +189,7 @@
     align-items: flex-end;
   }
   
+  /** hero msg**/
   .hero-msg {
     background-color: #222f3d;
     color: white;
@@ -199,7 +200,7 @@
     font-size: 0.85rem;
     width: 100%;
     padding-left: 10px;
-    /* margin-bottom: 25px; */
+   
   }
   
   .hero-msg a {
