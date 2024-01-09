@@ -223,7 +223,6 @@
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
-    margin-bottom: 15px;
   }
   
   .box p:hover {
@@ -241,6 +240,10 @@
   .box-content {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  #fashion {
+    margin-bottom: 15px;
   }
   
   .box-content p {
@@ -376,12 +379,15 @@
     .nav-signin p {
       display: none;
     }
-    .nav-signin text,
-    .nav-signin i {
-      display: block;
+    .nav-signin text {
       font-size: 14px;
       display: inline;
     }
+    
+    .nav-signin i {
+        font-size: 18px;
+        display: inline;
+      }
   
     .hamburger-menu {
       display: block;
